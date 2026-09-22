@@ -1,0 +1,365 @@
+{
+  "case": {
+    "id": "CYBER-2026-0847",
+    "title": "Investment Scam — fastgains-trading.com",
+    "description": "Victim transferred ₹2,50,000 via UPI after being lured by a fraudulent crypto investment platform. Subsequent blockchain activity identified in synthetic dataset.",
+    "status": "ACTIVE",
+    "blockchain": "Ethereum / BSC",
+    "wallet_address": "0xa1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0",
+    "case_story": "At 10:31 AM on September 15 2026, a UPI payment of ₹2,50,000 was recorded from the victim's account to UPI ID scam@ybl. Approximately 7 minutes later, on-chain activity was detected at Wallet A (0xa1b2…a9b0) in the synthetic blockchain dataset. The funds subsequently moved through Wallet B, interacted with a bridge contract at 11:02 AM, and arrived at Wallet C on BSC at 11:19 AM before reaching a VASP candidate cluster at 11:25 AM. The relationship between the bank payment and the crypto movement is a potential correlation requiring human verification.",
+    "created_at": "2026-09-15T12:00:00",
+    "is_demo": true
+  },
+  "evidence": [
+    {
+      "evidence_id": "E-001",
+      "case_id": "CYBER-2026-0847",
+      "filename": "complaint.txt",
+      "file_type": "text/plain",
+      "sha256_hash": "7d3f8a2c1b9e4f6d0a5c2e8b3f1d7a9c4e2b6f0d1a5c3e7b9f2d4a8c6e0b3f1",
+      "upload_timestamp": "2026-09-15T12:01:00",
+      "status": "HASH_VERIFIED",
+      "content": "Complainant: Ramesh Kumar. Amount: ₹2,50,000. Website: fastgains-trading.com. Phone: +91-9876543210. Wallet: 0xa1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0",
+      "file_size": 892
+    },
+    {
+      "evidence_id": "E-002",
+      "case_id": "CYBER-2026-0847",
+      "filename": "bank_statement.csv",
+      "file_type": "text/csv",
+      "sha256_hash": "a4b8c2d6e0f3a7b1c5d9e3f7a0b4c8d2e6f0a3b7c1d5e9f2a6b0c4d8e2f5a9b3",
+      "upload_timestamp": "2026-09-15T12:02:00",
+      "status": "HASH_VERIFIED",
+      "content": "2026-09-15,10:31:12,TXN20260915103112,UPI Debit,250000,,45000,UPI Transfer - scam@ybl",
+      "file_size": 312
+    },
+    {
+      "evidence_id": "E-003",
+      "case_id": "CYBER-2026-0847",
+      "filename": "chat.txt",
+      "file_type": "text/plain",
+      "sha256_hash": "c8d0e4f8b2a6c0d4e8f2b6a0c4d8e2f6b0a4c8d2e6f0b4a8c2d6e0f4b8a2c6d0",
+      "upload_timestamp": "2026-09-15T12:03:00",
+      "status": "HASH_VERIFIED",
+      "content": "WhatsApp chat with +91-9876543210. Payment ₹2,50,000 to scam@ybl. Website fastgains-trading.com. Wallet 0xa1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0",
+      "file_size": 1204
+    },
+    {
+      "evidence_id": "E-004",
+      "case_id": "CYBER-2026-0847",
+      "filename": "wallet.txt",
+      "file_type": "text/plain",
+      "sha256_hash": "e2f6a0b4c8d2e6f0a4b8c2d6e0f4a8b2c6d0e4f8a2b6c0d4e8f2a6b0c4d8e2f6",
+      "upload_timestamp": "2026-09-15T12:04:00",
+      "status": "HASH_VERIFIED",
+      "content": "DEMO / SYNTHETIC BLOCKCHAIN DATA. Wallet A: 0xa1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0. Wallet B: 0xc3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2. Wallet C: 0xe5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4",
+      "file_size": 1156
+    }
+  ],
+  "entities": [
+    {
+      "case_id": "CYBER-2026-0847", "evidence_id": "E-001",
+      "entity_type": "name", "value": "Ramesh Kumar",
+      "source_file": "complaint.txt", "source_location": "Line 3",
+      "confidence": 99, "is_on_chain": false, "fact_type": "FACT"
+    },
+    {
+      "case_id": "CYBER-2026-0847", "evidence_id": "E-001",
+      "entity_type": "phone", "value": "+91-9876543210",
+      "source_file": "complaint.txt", "source_location": "Line 8",
+      "confidence": 98, "is_on_chain": false, "fact_type": "FACT"
+    },
+    {
+      "case_id": "CYBER-2026-0847", "evidence_id": "E-001",
+      "entity_type": "website", "value": "fastgains-trading.com",
+      "source_file": "complaint.txt", "source_location": "Line 6",
+      "confidence": 97, "is_on_chain": false, "fact_type": "FACT"
+    },
+    {
+      "case_id": "CYBER-2026-0847", "evidence_id": "E-001",
+      "entity_type": "wallet", "value": "0xa1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0",
+      "source_file": "complaint.txt", "source_location": "Line 12",
+      "confidence": 99, "is_on_chain": true, "fact_type": "FACT"
+    },
+    {
+      "case_id": "CYBER-2026-0847", "evidence_id": "E-001",
+      "entity_type": "email", "value": "support@fastgains-trading.com",
+      "source_file": "complaint.txt", "source_location": "Line 14",
+      "confidence": 98, "is_on_chain": false, "fact_type": "FACT"
+    },
+    {
+      "case_id": "CYBER-2026-0847", "evidence_id": "E-002",
+      "entity_type": "amount", "value": "₹2,50,000",
+      "source_file": "bank_statement.csv", "source_location": "Row 2, Column Debit",
+      "confidence": 99, "is_on_chain": false, "fact_type": "FACT"
+    },
+    {
+      "case_id": "CYBER-2026-0847", "evidence_id": "E-002",
+      "entity_type": "upi", "value": "scam@ybl",
+      "source_file": "bank_statement.csv", "source_location": "Row 2, Description",
+      "confidence": 98, "is_on_chain": false, "fact_type": "FACT"
+    },
+    {
+      "case_id": "CYBER-2026-0847", "evidence_id": "E-002",
+      "entity_type": "timestamp", "value": "2026-09-15T10:31:12",
+      "source_file": "bank_statement.csv", "source_location": "Row 2, Date+Time",
+      "confidence": 99, "is_on_chain": false, "fact_type": "FACT"
+    },
+    {
+      "case_id": "CYBER-2026-0847", "evidence_id": "E-003",
+      "entity_type": "phone", "value": "+91-9876543210",
+      "source_file": "chat.txt", "source_location": "Multiple messages",
+      "confidence": 99, "is_on_chain": false, "fact_type": "FACT"
+    },
+    {
+      "case_id": "CYBER-2026-0847", "evidence_id": "E-003",
+      "entity_type": "upi", "value": "scam@ybl",
+      "source_file": "chat.txt", "source_location": "Message 10:04 AM",
+      "confidence": 99, "is_on_chain": false, "fact_type": "FACT"
+    },
+    {
+      "case_id": "CYBER-2026-0847", "evidence_id": "E-003",
+      "entity_type": "website", "value": "fastgains-trading.com",
+      "source_file": "chat.txt", "source_location": "Message 09:51 AM",
+      "confidence": 97, "is_on_chain": false, "fact_type": "FACT"
+    },
+    {
+      "case_id": "CYBER-2026-0847", "evidence_id": "E-003",
+      "entity_type": "wallet", "value": "0xa1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0",
+      "source_file": "chat.txt", "source_location": "Message 10:05 AM",
+      "confidence": 99, "is_on_chain": true, "fact_type": "FACT"
+    },
+    {
+      "case_id": "CYBER-2026-0847", "evidence_id": "E-004",
+      "entity_type": "wallet", "value": "0xc3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2",
+      "source_file": "wallet.txt", "source_location": "Wallet B",
+      "confidence": 95, "is_on_chain": true, "fact_type": "INFERENCE"
+    },
+    {
+      "case_id": "CYBER-2026-0847", "evidence_id": "E-004",
+      "entity_type": "wallet", "value": "0xe5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4",
+      "source_file": "wallet.txt", "source_location": "Wallet C (BSC)",
+      "confidence": 90, "is_on_chain": true, "fact_type": "INFERENCE"
+    }
+  ],
+  "correlations": [
+    {
+      "case_id": "CYBER-2026-0847",
+      "title": "Bank Payment ↔ Blockchain Activity",
+      "description": "Amount and temporal proximity detected between UPI payment and on-chain wallet activity.",
+      "evidence_ids": "[\"E-002\", \"E-003\", \"E-004\"]",
+      "entity_ids": "[]",
+      "amount_similarity": 94.0,
+      "temporal_proximity": 87.0,
+      "entity_linkage": 76.0,
+      "overall_score": 86.0,
+      "overall_label": "HIGH",
+      "explanation": "The ₹2,50,000 UPI debit at 10:31:12 is temporally proximate to the first observed wallet activity at 10:38:41 (approximately 7 minutes). The amount corresponds to an approximate crypto equivalent at the time. The wallet address appears in both the chat evidence and the complaint, linking the communication infrastructure to the identified address. This is a potential correlation — human verification is required.",
+      "fact_type": "INFERENCE"
+    },
+    {
+      "case_id": "CYBER-2026-0847",
+      "title": "Communication Infrastructure ↔ Wallet",
+      "description": "Phone number and website from chat evidence co-occur with identified wallet address.",
+      "evidence_ids": "[\"E-001\", \"E-003\", \"E-004\"]",
+      "entity_ids": "[]",
+      "amount_similarity": 0.0,
+      "temporal_proximity": 61.0,
+      "entity_linkage": 88.0,
+      "overall_score": 71.0,
+      "overall_label": "MEDIUM",
+      "explanation": "Phone number +91-9876543210 and website fastgains-trading.com appear in both the complaint and the chat export. The same chat messages that referenced the phone number also contained the wallet address 0xa1b2…a9b0. The relationship is inferred from entity co-occurrence in the same evidence source, not from a direct financial transaction record.",
+      "fact_type": "INFERENCE"
+    }
+  ],
+  "timeline": [
+    {
+      "case_id": "CYBER-2026-0847",
+      "event_timestamp": "09:42:00",
+      "event_description": "Initial contact established via fastgains-trading.com communication channel.",
+      "source": "chat.txt",
+      "evidence_id": "E-003",
+      "confidence": 95,
+      "event_type": "off_chain",
+      "fact_type": "FACT"
+    },
+    {
+      "case_id": "CYBER-2026-0847",
+      "event_timestamp": "10:04:00",
+      "event_description": "Victim instructed to transfer ₹2,50,000 to UPI ID scam@ybl.",
+      "source": "chat.txt",
+      "evidence_id": "E-003",
+      "confidence": 99,
+      "event_type": "off_chain",
+      "fact_type": "FACT"
+    },
+    {
+      "case_id": "CYBER-2026-0847",
+      "event_timestamp": "10:31:12",
+      "event_description": "₹2,50,000 UPI debit recorded. Transaction ID: TXN20260915103112. Destination: scam@ybl.",
+      "source": "bank_statement.csv",
+      "evidence_id": "E-002",
+      "confidence": 99,
+      "event_type": "off_chain",
+      "fact_type": "FACT"
+    },
+    {
+      "case_id": "CYBER-2026-0847",
+      "event_timestamp": "10:38:41",
+      "event_description": "Wallet A (0xa1b2…a9b0) received 0.094 ETH — first observed on-chain activity. [SYNTHETIC DATA]",
+      "source": "wallet.txt",
+      "evidence_id": "E-004",
+      "confidence": 85,
+      "event_type": "on_chain",
+      "fact_type": "INFERENCE"
+    },
+    {
+      "case_id": "CYBER-2026-0847",
+      "event_timestamp": "10:45:33",
+      "event_description": "0.093 ETH transferred from Wallet A to Wallet B (0xc3d4…c1d2). [SYNTHETIC DATA]",
+      "source": "wallet.txt",
+      "evidence_id": "E-004",
+      "confidence": 82,
+      "event_type": "on_chain",
+      "fact_type": "INFERENCE"
+    },
+    {
+      "case_id": "CYBER-2026-0847",
+      "event_timestamp": "11:02:17",
+      "event_description": "Wallet B interacted with bridge contract. Cross-chain movement detected (ETH → BSC). [SYNTHETIC DATA]",
+      "source": "wallet.txt",
+      "evidence_id": "E-004",
+      "confidence": 78,
+      "event_type": "on_chain",
+      "fact_type": "INFERENCE"
+    },
+    {
+      "case_id": "CYBER-2026-0847",
+      "event_timestamp": "11:19:48",
+      "event_description": "Wallet C (0xe5f6…e3f4) on BSC received funds. [SYNTHETIC DATA]",
+      "source": "wallet.txt",
+      "evidence_id": "E-004",
+      "confidence": 75,
+      "event_type": "on_chain",
+      "fact_type": "INFERENCE"
+    },
+    {
+      "case_id": "CYBER-2026-0847",
+      "event_timestamp": "11:25:09",
+      "event_description": "Wallet C interacted with VASP-X candidate deposit cluster. [SYNTHETIC DATA — candidate attribution, not confirmed]",
+      "source": "wallet.txt",
+      "evidence_id": "E-004",
+      "confidence": 72,
+      "event_type": "on_chain",
+      "fact_type": "INFERENCE"
+    }
+  ],
+  "vasp": [
+    {
+      "case_id": "CYBER-2026-0847",
+      "wallet_address": "0xe5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4",
+      "vasp_name": "VASP-X",
+      "confidence": 72.0,
+      "attribution_type": "CANDIDATE",
+      "supporting_signals": "[\"Deposit cluster address match (synthetic dataset)\", \"Historical association in prototype database\", \"Transaction behavioral pattern similarity\", \"Graph proximity: 1 hop from identified cluster\"]",
+      "limitations": "[\"Prototype attribution — not independently verified\", \"Synthetic intelligence dataset only\", \"Does not establish ownership\", \"Confidence reflects prototype scoring, not proof of ownership\"]",
+      "evidence_ids": "[\"E-004\"]",
+      "source": "Prototype attribution dataset — DEMO / SYNTHETIC INTELLIGENCE",
+      "last_verified": "2026-09-22",
+      "fact_type": "INFERENCE"
+    }
+  ],
+  "risks": [
+    {
+      "case_id": "CYBER-2026-0847",
+      "indicator_type": "Rapid Fund Movement",
+      "detected": true,
+      "description": "Funds moved through multiple wallets within a 47-minute window (10:38 → 11:25). Behavioral indicator only — not proof of criminal activity.",
+      "evidence_ids": "[\"E-004\"]"
+    },
+    {
+      "case_id": "CYBER-2026-0847",
+      "indicator_type": "Cross-Chain Movement",
+      "detected": true,
+      "description": "Bridge contract interaction detected: Ethereum → Binance Smart Chain at 11:02 AM. [SYNTHETIC DATA]",
+      "evidence_ids": "[\"E-004\"]"
+    },
+    {
+      "case_id": "CYBER-2026-0847",
+      "indicator_type": "Multiple Intermediary Wallets",
+      "detected": true,
+      "description": "Fund flow passed through at least 3 intermediate addresses before reaching VASP candidate cluster. [SYNTHETIC DATA]",
+      "evidence_ids": "[\"E-004\"]"
+    },
+    {
+      "case_id": "CYBER-2026-0847",
+      "indicator_type": "Layering Pattern",
+      "detected": true,
+      "description": "Sequential wallet-to-wallet transfers consistent with layering behaviour. This is a behavioral indicator — not proof of money laundering.",
+      "evidence_ids": "[\"E-004\"]"
+    },
+    {
+      "case_id": "CYBER-2026-0847",
+      "indicator_type": "Mixer Interaction",
+      "detected": false,
+      "description": "No mixer or tumbler interaction detected in the available synthetic dataset.",
+      "evidence_ids": "[]"
+    },
+    {
+      "case_id": "CYBER-2026-0847",
+      "indicator_type": "Fragmentation",
+      "detected": false,
+      "description": "No fund fragmentation pattern detected in this transaction path.",
+      "evidence_ids": "[]"
+    }
+  ],
+  "gaps": [
+    {
+      "case_id": "CYBER-2026-0847",
+      "gap_description": "No independent evidence directly links the phone number +91-9876543210 to the wallet address 0xa1b2…a9b0.",
+      "why_it_matters": "The current connection relies on co-occurrence in the same chat messages. Without a direct financial or registration link, this relationship remains an inference.",
+      "next_action": "Search all case evidence and any available OSINT for direct financial or account registration links between the phone number and the wallet address.",
+      "severity": "HIGH",
+      "related_entities": "[\"phone\", \"wallet\"]"
+    },
+    {
+      "case_id": "CYBER-2026-0847",
+      "gap_description": "VASP attribution for Wallet C is based on prototype synthetic data and has not been independently verified.",
+      "why_it_matters": "Without independent verification, the VASP-X candidate attribution cannot support a formal information request.",
+      "next_action": "Verify the VASP candidate using an independent attribution source before initiating any formal VASP information request.",
+      "severity": "HIGH",
+      "related_entities": "[\"wallet\", \"vasp\"]"
+    },
+    {
+      "case_id": "CYBER-2026-0847",
+      "gap_description": "The fiat-to-crypto conversion between 10:31 AM and 10:38 AM is not documented in available evidence.",
+      "why_it_matters": "The 7-minute gap is consistent with a crypto purchase but is not independently documented. Closing this gap would strengthen the bank-to-blockchain correlation.",
+      "next_action": "Obtain exchange transaction records that may document the fiat-to-crypto conversion during the 10:31–10:38 AM window.",
+      "severity": "MEDIUM",
+      "related_entities": "[\"amount\", \"wallet\", \"transaction_hash\"]"
+    }
+  ],
+  "cross_case_links": [
+    {
+      "source_case_id": "CYBER-2026-0847",
+      "linked_case_id": "CYBER-2026-0731",
+      "linked_case_title": "Crypto Investment Fraud — tradesafe-pro.com",
+      "similarity_score": 87.0,
+      "shared_entities": "[{\"type\": \"phone\", \"value\": \"+91-9876543210\"}, {\"type\": \"wallet\", \"value\": \"0xc3d4...c1d2\"}]"
+    },
+    {
+      "source_case_id": "CYBER-2026-0847",
+      "linked_case_id": "CYBER-2026-0789",
+      "linked_case_title": "Forex Scam — quickprofits-fx.com",
+      "similarity_score": 74.0,
+      "shared_entities": "[{\"type\": \"website\", \"value\": \"fastgains-trading.com\"}, {\"type\": \"wallet\", \"value\": \"0xe5f6...e3f4\"}]"
+    },
+    {
+      "source_case_id": "CYBER-2026-0847",
+      "linked_case_id": "CYBER-2026-0801",
+      "linked_case_title": "Fake Trading Platform — cryptoearn365.net",
+      "similarity_score": 61.0,
+      "shared_entities": "[{\"type\": \"wallet\", \"value\": \"0xe5f6...e3f4\"}]"
+    }
+  ]
+}

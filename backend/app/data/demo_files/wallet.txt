@@ -1,0 +1,35 @@
+INVESTIGATION WALLET DATA
+=========================
+[DEMO / SYNTHETIC BLOCKCHAIN DATA]
+
+Primary Wallet (Wallet A):
+0xa1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0
+Network: Ethereum Mainnet
+First Observed: 2026-09-15T10:38:41Z
+Last Observed: 2026-09-15T10:45:33Z
+Total Inflow: 0.094 ETH
+Total Outflow: 0.093 ETH
+
+Transaction History (SYNTHETIC):
+IN  | 0.094 ETH | from: 0xf1e2d3c4b5a6978899aabbccddeeff00 | 10:38:41
+OUT | 0.093 ETH | to:   0xc3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2 | 10:45:33
+
+Wallet B:
+0xc3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2
+Network: Ethereum Mainnet
+IN  | 0.093 ETH | from: Wallet A | 10:45:33
+OUT | 0.092 ETH | to:   0xBRIDGE_CONTRACT | 11:02:17
+
+Bridge Contract (Synthetic):
+0xd4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3
+Network: Ethereum → BSC
+Interaction: 11:02:17
+
+Wallet C (BSC):
+0xe5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4
+Network: Binance Smart Chain
+IN  | 0.29 BSC-ETH | 11:19:48
+OUT | to VASP-X cluster | 11:25:09
+
+Note: All addresses and transactions are SYNTHETIC DEMO DATA.
+Do not attempt to look up these addresses on real blockchains.
